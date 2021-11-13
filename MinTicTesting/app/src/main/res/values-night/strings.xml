@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MinTicTesting</string>
     <string name="label">Usuario</string>
     <string name="labelUsuario">Usuario</string>
     <string name="labelContraseña">Contraseña</string>
