@@ -6,49 +6,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login"
-    android:background="@drawable/trailrunnin2"
-    android:backgroundTint="@color/secundaryColor"
+    android:background="@drawable/trailrunnin2_1"
+    android:backgroundTint="@color/primaryColor"
     android:backgroundTintMode="multiply">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilUsuario"
         style="@style/ThemeTextInputLayout"
-        android:layout_marginTop="324dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:hint="@string/labelUsuario"
         app:helperText="@string/helpTextUsuario"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tilContraseña"
+        app:layout_constraintEnd_toEndOf="@+id/bLogin"
+        app:layout_constraintStart_toStartOf="@+id/bLogin"
         app:startIconDrawable="@drawable/ic_baseline_person_24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etUsuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:outlineAmbientShadowColor="@color/white"
-            android:outlineSpotShadowColor="@color/white"
-            android:textColor="@color/white"/>
+            android:textSize="16sp"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilContraseña"
         style="@style/ThemeTextInputLayout"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
         android:hint="@string/labelContraseña"
         app:endIconMode="password_toggle"
         app:helperText="@string/helpTextPassword"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bLogin"
+        app:layout_constraintEnd_toEndOf="@+id/bLogin"
         app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilUsuario"
-        app:startIconDrawable="@drawable/ic_baseline_vpn_key_24"
-        >
+        app:layout_constraintStart_toStartOf="@+id/bLogin"
+        app:startIconDrawable="@drawable/ic_baseline_vpn_key_24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etContraseña"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textSize="16sp"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -56,12 +57,12 @@
         android:id="@+id/bLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/longSpace"
         android:layout_marginStart="@dimen/longSpace"
-        android:layout_marginBottom="@dimen/middleSpace"
-        android:text="Login"
+        android:layout_marginEnd="@dimen/longSpace"
+        android:layout_marginBottom="8dp"
         android:background="@color/highLightColor"
-        app:layout_constraintBottom_toTopOf="@id/bRegistro"
+        android:text="@string/loginButtonText"
+        app:layout_constraintBottom_toTopOf="@+id/bRegistro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -70,11 +71,11 @@
         android:id="@+id/bRegistro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/longSpace"
         android:layout_marginStart="@dimen/longSpace"
-        android:text="Registro"
+        android:layout_marginEnd="@dimen/longSpace"
         android:layout_marginBottom="@dimen/xlongSpace"
         android:background="@color/highLightColor"
+        android:text="@string/registroButtonText"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

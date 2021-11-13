@@ -8,13 +8,9 @@
         <!-- Customize your theme here. -->
     </style>
 
-
-
     <style name="ThemeTextInputLayout">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginStart">@dimen/longSpace</item>
-        <item name="android:layout_marginEnd">@dimen/xlongSpace</item>
         <item name="android:layout_marginBottom">@dimen/longSpace</item>
         <item name="android:layout_marginTop">@dimen/middleSpace</item>
         <item name="helperTextEnabled">true</item>
