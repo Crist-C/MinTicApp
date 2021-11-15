@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Base application theme. -->
+    <style name="Theme.MinTicTesting" parent="Theme.AppCompat.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/darkColor</item>
+        <item name="colorAccent">@color/highLightColor</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ThemeTextInputLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/longSpace</item>
+        <item name="android:layout_marginTop">@dimen/middleSpace</item>
+        <item name="helperTextEnabled">true</item>
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="android:textColorHighlight">@color/highLightColor</item>
+        <item name="android:textColorHint">@color/secundaryColor</item>
+        <item name="android:textColorLink">@color/darkColor</item>
+        <item name="startIconTint">@color/highLightColor</item>
+    </style>
+
+</resources>
