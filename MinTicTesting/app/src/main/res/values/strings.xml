@@ -3,8 +3,11 @@
     <string name="label">Usuario</string>
     <string name="labelUsuario">Usuario</string>
     <string name="labelContraseña">Contraseña</string>
+    <string name="labelConfirmarContraseña">Confirmar Contraseña</string>
     <string name="helpTextPassword">Olvidé mi contraseña</string>
     <string name="helpTextUsuario">Recordar mi usuario</string>
     <string name="loginButtonText">Login</string>
     <string name="registroButtonText">Registro</string>
+    <string name="rg_nombre_de_usuario">Nombre de Usuario</string>
+    <string name="rgcorreo">Correo</string>
 </resources>

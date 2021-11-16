@@ -6,4 +6,6 @@
     <string name="helpTextPassword">Olvidé mi contraseña</string>
     <string name="helpTextUsuario">Recordar mi usuario</string>
     <string name="loginButtonText">Login</string>
+    <string name="rg_nombre_de_usuario">Nombre de Usuario</string>
+    <string name="rgcorreo">Correo</string>
 </resources>
