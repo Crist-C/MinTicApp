@@ -8,47 +8,47 @@
     android:background="@color/white">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tvTittle"
+        android:text="@string/TituloRegistrarse"
+        android:textAppearance="?attr/textAppearanceBody2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/xlongSpace"
-        android:text="Registrate"
-        android:textSize="24sp"
-        android:textColor="@color/highLightColor"
+        android:textSize="28sp"
+        android:textColor="@color/darkColor"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="32dp"
+        android:id="@+id/ivIcono"
+        android:layout_width="@dimen/xlongSpace"
+        android:layout_height="@dimen/xlongSpace"
+        android:layout_marginTop="@dimen/longSpace"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:srcCompat="@drawable/ic_baseline_person_24" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTittle"
+        app:srcCompat="@drawable/ic_round_how_to_reg_24"
+        app:tint="@color/primaryColor"
+        android:tintMode="multiply"/>
 
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilNombreUsuario"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:hint="@string/rg_nombre_de_usuario"
-        style="@style/ThemeTextInputLayout"
-        android:layout_marginStart="@dimen/longSpace"
+        style="@style/TextInputLayout"
         android:layout_marginTop="@dimen/longSpace"
-        android:layout_marginEnd="@dimen/longSpace"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:startIconDrawable="@drawable/ic_baseline_person_24">
+        app:layout_constraintTop_toBottomOf="@+id/ivIcono"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hintTextColor="#0277BD" />
+            android:textColor="@color/darkColor"
+            android:inputType="textPersonName"/>
 
 
 
@@ -57,78 +57,68 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilCorreo"
-        style="@style/ThemeTextInputLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/longSpace"
-        android:layout_marginEnd="@dimen/longSpace"
+        style="@style/TextInputLayout"
         android:hint="@string/rgcorreo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/shortSpace"
         app:layout_constraintTop_toBottomOf="@+id/tilNombreUsuario"
-        app:startIconDrawable="@drawable/ic_baseline_email_24">
+        app:startIconDrawable="@drawable/ic_baseline_email_24"
+        tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkColor"
+            android:inputType="textEmailAddress"/>
 
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilContrasena"
-        style="@style/ThemeTextInputLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/longSpace"
-        android:layout_marginEnd="@dimen/longSpace"
+        style="@style/TextInputLayout"
         android:hint="@string/labelContraseña"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/shortSpace"
         app:layout_constraintTop_toBottomOf="@+id/tilCorreo"
         app:startIconDrawable="@drawable/ic_baseline_lock_24"
-        app:endIconMode="password_toggle">
+        app:endIconMode="password_toggle"
+        tools:ignore="MissingConstraints">
 
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/darkColor"
             android:inputType="textPassword"/>
-
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/longSpace"
-        android:layout_marginEnd="@dimen/longSpace"
-        android:text="minimo de 8 digitos, incluir almeno un numero, una mayuscula, una minuscula y un caracter especial"
-        android:textColor="#0C0C0C"
+        android:layout_marginTop="@dimen/shortSpace"
+        android:layout_marginHorizontal="@dimen/longSpace"
+        android:text="@string/ParametrosContraseña"
+        android:textSize="12sp"
+        android:textColor="@color/ColorTextoPersonalizado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tilContrasena" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilConfirmarContrasena"
-        style="@style/ThemeTextInputLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/longSpace"
-
-        android:layout_marginEnd="@dimen/longSpace"
+        style="@style/TextInputLayout"
         android:hint="@string/labelConfirmarContraseña"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/shortSpace"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:startIconDrawable="@drawable/ic_baseline_lock_24"
-        app:endIconMode="password_toggle">
+        app:endIconMode="password_toggle"
+        tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/darkColor"
             android:inputType="textPassword"/>
 
 
@@ -136,11 +126,9 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/longSpace"
-        android:layout_marginEnd="@dimen/longSpace"
-        android:text="Crea tu perfil"
+        android:text="@string/crea_tu_perfil"
+        style="@style/FilledButton"
+        android:layout_marginTop="@dimen/xlongSpace"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tilConfirmarContrasena" />

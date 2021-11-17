@@ -7,4 +7,6 @@
     <string name="helpTextUsuario">Recordar mi usuario</string>
     <string name="loginButtonText">Login</string>
     <string name="rg_correo">Correo</string>
+    <string name="TituloRegistrarse">Registrate</string>
+    <string name="ParametrosContraseña">minimo de 8 digitos, incluir almeno un numero, una mayuscula, una minuscula y un caracter especial</string>
 </resources>

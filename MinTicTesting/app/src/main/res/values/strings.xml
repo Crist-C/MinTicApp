@@ -8,4 +8,11 @@
     <string name="loginButtonText">LOGIN</string>
     <string name="registroButtonText">Registro</string>
     <string name="rg_correo">Correo</string>
+    <string name="rg_nombre_de_usuario">Nombre de usuario</string>
+    <string name="rgcorreo">Correo</string>
+    <string name="labelConfirmarContraseña">Confirmar contraseña</string>
+    <string name="TituloRegistrarse">Registrate</string>
+    <string name="ParametrosContraseña">mínimo de 8 digitos, debe incluir un número, una mayúscula, una minúscula y un caracter especial</string>
+    <string name="crea_tu_perfil">Crea tu perfil</string>
+
 </resources>

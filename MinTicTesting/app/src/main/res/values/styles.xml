@@ -22,6 +22,7 @@
         <item name="android:layout_marginHorizontal">@dimen/longSpace</item>
         <item name="layout_constraintEnd_toEndOf">parent</item>
         <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="android:textAppearance">?attr/textAppearanceButton</item>
     </style>
 
     <style name="OutlineButton" parent="Widget.Material3.Button.OutlinedButton">
@@ -30,6 +31,7 @@
     <item name="android:layout_marginHorizontal">@dimen/longSpace</item>
     <item name="layout_constraintEnd_toEndOf">parent</item>
     <item name="layout_constraintStart_toStartOf">parent</item>
+    <item name="android:textAppearance">?attr/textAppearanceButton</item>
 </style>
 
     <!--Instrucciones para modificar las propiedades del OutLine
