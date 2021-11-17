@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MinTicTesting</string>
+    <string name="label">Usuario</string>
+    <string name="labelUsuario">Usuario</string>
+    <string name="labelContraseña">Contraseña</string>
+    <string name="helpTextPassword">Olvidé mi contraseña</string>
+    <string name="helpTextUsuario">normalmente es tu correo 😉</string>
+    <string name="loginButtonText">LOGIN</string>
+    <string name="registroButtonText">Registro</string>
+    <string name="rg_correo">Correo</string>
+</resources>
