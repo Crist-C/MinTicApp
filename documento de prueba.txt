@@ -12,4 +12,19 @@ Mi primer commit hola, Soy Diana
 Modificación realizada por Cristian
 
 
+<<<<<<< HEAD
 ------ Este Comentario se agrega desde otra carpeta distinta
+=======
+
+
+modificacion realizada por miguel
+
+Comentario Cristian 9-Noviembre
+
+
+
+
+
+
+diana comment
+>>>>>>> 32d0a779b19f610d9b2c7b0bf222239f1deb228c
