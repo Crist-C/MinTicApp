@@ -10,10 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MinTicTesting">
         <activity
-            android:name=".regininfoPersonal"
-            android:exported="false" />
-        <activity
-            android:name=".Registro"
+            android:name=".regUsuarioContrasena"
             android:exported="false" />
 
         <category android:name="android.intent.category.LAUNCHER" />
