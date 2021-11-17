@@ -5,22 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".regUsuarioContrasena"
-    android:background="@color/white">
+    android:background="@drawable/trail_running2"
+    android:backgroundTint="@color/highLightColor"
+    android:backgroundTintMode="multiply">
 
     <TextView
         android:id="@+id/tvTittle"
         android:text="@string/TituloRegistrarse"
-        android:textAppearance="?attr/textAppearanceBody2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/TittleText"
         android:layout_marginTop="@dimen/xlongSpace"
-        android:textSize="28sp"
-        android:textColor="@color/darkColor"
-        android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/ivIcono"
@@ -61,7 +55,7 @@
         android:hint="@string/rgcorreo"
         android:layout_marginTop="@dimen/shortSpace"
         app:layout_constraintTop_toBottomOf="@+id/tilNombreUsuario"
-        app:startIconDrawable="@drawable/ic_baseline_email_24"
+        app:startIconDrawable="@drawable/ic_baseline_alternate_email_24"
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -100,7 +94,7 @@
         android:layout_marginHorizontal="@dimen/longSpace"
         android:text="@string/ParametrosContraseña"
         android:textSize="12sp"
-        android:textColor="@color/ColorTextoPersonalizado"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tilContrasena" />
@@ -125,13 +119,13 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button"
-        android:text="@string/crea_tu_perfil"
+        android:id="@+id/bCreaTuPerfil"
         style="@style/FilledButton"
         android:layout_marginTop="@dimen/xlongSpace"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilConfirmarContrasena" />
+        android:text="@string/crea_tu_perfil"
+        app:layout_constraintTop_toBottomOf="@+id/tilConfirmarContrasena"
+        tools:ignore="MissingConstraints" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
