@@ -6,21 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login"
-    android:background="@drawable/trailrunnin2"
-    android:backgroundTint="@color/highLightColor"
+    android:background="@drawable/trail_running3"
+    android:backgroundTint="@color/primaryColor"
     android:backgroundTintMode="multiply">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilUsuario"
-        style="@style/ThemeTextInputLayout"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:hint="@string/labelUsuario"
         app:helperText="@string/helpTextUsuario"
+        style="@style/TextInputLayout"
         app:layout_constraintBottom_toTopOf="@+id/tilContraseña"
-        app:layout_constraintEnd_toEndOf="@+id/bLogin"
-        app:layout_constraintStart_toStartOf="@+id/bLogin"
-        app:startIconDrawable="@drawable/ic_baseline_person_24">
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etUsuario"
@@ -32,17 +29,14 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilContraseña"
-        style="@style/ThemeTextInputLayout"
-        android:layout_height="wrap_content"
+        style="@style/TextInputLayout"
         android:layout_marginBottom="32dp"
         android:hint="@string/labelContraseña"
         app:endIconMode="password_toggle"
         app:helperText="@string/helpTextPassword"
         app:layout_constraintBottom_toTopOf="@+id/bLogin"
-        app:layout_constraintEnd_toEndOf="@+id/bLogin"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="@+id/bLogin"
-        app:startIconDrawable="@drawable/ic_baseline_vpn_key_24">
+        app:startIconDrawable="@drawable/ic_baseline_vpn_key_24"
+        tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etContraseña"
@@ -55,29 +49,25 @@
 
     <Button
         android:id="@+id/bLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/longSpace"
-        android:layout_marginEnd="@dimen/longSpace"
-        android:layout_marginBottom="8dp"
-        android:background="@color/highLightColor"
         android:text="@string/loginButtonText"
+        style="@style/FilledButton"
         app:layout_constraintBottom_toTopOf="@+id/bRegistro"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:ignore="MissingConstraints" />
+
 
     <Button
         android:id="@+id/bRegistro"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/longSpace"
-        android:layout_marginEnd="@dimen/longSpace"
-        android:layout_marginBottom="@dimen/xlongSpace"
-        android:background="@color/highLightColor"
         android:text="@string/registroButtonText"
+        style="@style/OutlineButton"
+        android:layout_marginBottom="@dimen/xlongSpace"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:ignore="MissingConstraints"/>
+
+    <!--Instrucciones para modificar las propiedades del OutLine
+                app:rippleColor="#33AAAAAA"
+                app:strokeColor="@color/secundaryColor"
+                app:strokeWidth="2dp"-->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -4,7 +4,8 @@
     <string name="labelUsuario">Usuario</string>
     <string name="labelContraseña">Contraseña</string>
     <string name="helpTextPassword">Olvidé mi contraseña</string>
-    <string name="helpTextUsuario">Recordar mi usuario</string>
-    <string name="loginButtonText">Login</string>
+    <string name="helpTextUsuario">normalmente es tu correo 😉</string>
+    <string name="loginButtonText">LOGIN</string>
     <string name="registroButtonText">Registro</string>
+    <string name="rg_correo">Correo</string>
 </resources>

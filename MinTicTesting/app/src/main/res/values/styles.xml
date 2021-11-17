@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginHorizontal">@dimen/longSpace</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="helperTextEnabled">true</item>
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="android:textColorHighlight">@color/highLightColor</item>
+        <item name="android:textColorHint">@color/secundaryColor</item>
+        <item name="android:textColorLink">@color/darkColor</item>
+        <item name="startIconTint">@color/primaryColor</item>
+
+    </style>
+
+    <style name="FilledButton" parent="Widget.Material3.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">@dimen/longSpace</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+    </style>
+
+    <style name="OutlineButton" parent="Widget.Material3.Button.OutlinedButton">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginHorizontal">@dimen/longSpace</item>
+    <item name="layout_constraintEnd_toEndOf">parent</item>
+    <item name="layout_constraintStart_toStartOf">parent</item>
+</style>
+
+    <!--Instrucciones para modificar las propiedades del OutLine
+            app:rippleColor="#33AAAAAA"
+            app:strokeColor="@color/secundaryColor"
+            app:strokeWidth="2dp"-->
 
 
 </resources>
