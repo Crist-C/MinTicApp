@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mintictesting" >
+    package="com.example.mintictesting">
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MinTicTesting" >
+        android:theme="@style/Theme.MinTicTesting">
+        <activity
+            android:name=".reg_estado_fisico4"
+            android:exported="false" />
+        <activity
+            android:name=".activity_reg_estado_fisico_3"
+            android:exported="false" />
+        <activity
+            android:name=".reg_estado_fisico_2"
+            android:exported="false" />
         <activity
             android:name=".regInfoEstadoFisico"
             android:exported="false" />
@@ -20,7 +29,7 @@
 
         <activity
             android:name=".Login"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>

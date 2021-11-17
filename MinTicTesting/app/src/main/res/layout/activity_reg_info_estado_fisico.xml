@@ -7,57 +7,56 @@
     android:layout_height="match_parent"
     tools:context=".regInfoEstadoFisico">
 
-    <Button
-        android:id="@+id/containedButton3"
-        android:layout_width="314dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="8dp"
-        android:text="Una sola vez a la semana"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.449" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/trailrunnin2"
+        android:backgroundTint="@color/darkColor"
+        android:backgroundTintMode="multiply"
+        tools:context=".Registro"
+        tools:layout_editor_absoluteX="205dp"
+        tools:layout_editor_absoluteY="228dp" >
 
-    <Button
-        android:id="@+id/containedButton4"
-        android:layout_width="314dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="8dp"
-        android:text="Cada quince dias"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.571" />
+        <Button
+            android:id="@+id/containedButton2"
+            android:layout_width="314dp"
+            android:layout_height="42dp"
+            android:text="Algunos dias a la semana"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="286dp" />
 
-    <Button
-        android:id="@+id/containedButton5"
-        android:layout_width="314dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="8dp"
-        android:text="Ocasionalmente"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.679" />
+        <Button
+            android:id="@+id/containedButton3"
+            android:layout_width="314dp"
+            android:layout_height="42dp"
+            android:text="Una sola vez a la semana"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="348dp" />
 
-    <Button
-        android:id="@+id/containedButton6"
-        android:layout_width="314dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="8dp"
-        android:text="Nunca"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.804" />
+        <Button
+            android:id="@+id/containedButton4"
+            android:layout_width="314dp"
+            android:layout_height="42dp"
+            android:text="Cada quince dias"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="411dp" />
+
+        <Button
+            android:id="@+id/containedButton5"
+            android:layout_width="314dp"
+            android:layout_height="42dp"
+            android:text="Ocasionalmente"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="466dp" />
+
+        <Button
+            android:id="@+id/containedButton6"
+            android:layout_width="314dp"
+            android:layout_height="42dp"
+            android:text="Nunca"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="527dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/textView4"
@@ -81,19 +80,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.217" />
-
-    <Button
-        android:id="@+id/containedButton2"
-        android:layout_width="314dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="8dp"
-        android:text="Algunos dias a la semana"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.329" />
 
     <com.google.android.material.button.MaterialButtonToggleGroup
         android:id="@+id/toggleButton"
