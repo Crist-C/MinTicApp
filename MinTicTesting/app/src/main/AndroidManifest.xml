@@ -11,6 +11,20 @@
         android:theme="@style/Theme.MinTicTesting">
 
         <activity
+            android:name=".reg_estado_fisico4"
+            android:exported="false" />
+        <activity
+            android:name=".activity_reg_estado_fisico_3"
+            android:exported="false" />
+        <activity
+            android:name=".reg_estado_fisico_2"
+            android:exported="false" />
+        <activity
+            android:name=".regInfoEstadoFisico"
+            android:exported="false" />
+
+
+        <activity
             android:name=".regInfoPersonal"
             android:exported="true">
             <intent-filter>
