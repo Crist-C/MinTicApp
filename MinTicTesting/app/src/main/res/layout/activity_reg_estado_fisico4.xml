@@ -4,80 +4,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".reg_estado_fisico4">
+    android:background="@drawable/trail_running1"
+    android:backgroundTint="@color/primaryColor"
+    android:backgroundTintMode="multiply"
+    tools:context=".registro.reg_estado_fisico4">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/trailrunnin2"
-        android:backgroundTint="@color/darkColor"
-        android:backgroundTintMode="multiply"
-        tools:context=".Registro">
+    <TextView
+        android:id="@+id/tvPracticaAlgunDeporte"
+        style="@style/TittleText"
+        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_marginHorizontal="@dimen/longSpace"
+        android:layout_marginTop="96dp"
+        android:text="@string/estadoFisico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
-        <Button
-            android:id="@+id/containedButton7"
-            android:layout_width="314dp"
-            android:layout_height="42dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="316dp"
-            android:text="realizo otras acividades"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.494"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"
-            app:layout_constraintVertical_bias="0.571" />
 
-        <Button
-            android:id="@+id/containedButton8"
-            android:layout_width="314dp"
-            android:layout_height="42dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="372dp"
-            android:text="malo"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.494"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"
-            app:layout_constraintVertical_bias="0.449" />
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/tbGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPracticaAlgunDeporte"
+        app:singleSelection="true">
 
         <Button
-            android:id="@+id/containedButton9"
-            android:layout_width="314dp"
-            android:layout_height="42dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="428dp"
-            android:text="bueno"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.494"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"
-            app:layout_constraintVertical_bias="0.329" />
+            android:id="@+id/bExcelente"
+            style="@style/OutlineButton"
+            android:layout_marginHorizontal="0dp"
+            android:text="@string/excelente" />
 
         <Button
-            android:id="@+id/containedButton10"
-            android:layout_width="314dp"
-            android:layout_height="42dp"
-            android:layout_marginBottom="488dp"
-            android:text="excelente"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.494"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"
-            app:layout_constraintVertical_bias="0.217" />
+            android:id="@+id/bBueno"
+            style="@style/OutlineButton"
+            android:layout_marginHorizontal="0dp"
+            android:text="@string/bueno" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="64dp"
-            android:gravity="center"
-            android:text="En general considero que  \nmi estado fisico es?"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/bNotanBueno"
+            style="@style/OutlineButton"
+            android:layout_marginHorizontal="0dp"
+            android:text="@string/no_tan_bueno" />
+
+        <Button
+            android:id="@+id/bRealizoOtrasActividades"
+            style="@style/OutlineButton"
+            android:layout_marginHorizontal="0dp"
+            android:text="@string/realizo_otras_acividades" />
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <TextView
+        android:id="@+id/tvPreguntaEstatura"
+        style="@style/TittleText"
+        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_marginHorizontal="@dimen/longSpace"
+        android:layout_marginTop="@dimen/middleSpace"
+        android:text="@string/ingresa_tu_estatura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf=""
+        app:layout_constraintTop_toBottomOf="@id/tbGroup1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvPreguntaPeso"
+        style="@style/TittleText"
+        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_marginHorizontal="@dimen/longSpace"
+        android:layout_marginTop="96dp"
+        android:text="@string/ingresa_tu_peso_aproximado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf=""
+        app:layout_constraintTop_toBottomOf="@id/tvPreguntaEstatura"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

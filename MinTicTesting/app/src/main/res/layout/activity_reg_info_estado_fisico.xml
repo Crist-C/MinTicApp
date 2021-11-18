@@ -5,108 +5,127 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".regInfoEstadoFisico">
+    android:background="@drawable/trail_running1"
+    android:backgroundTint="@color/highLightColor"
+    android:backgroundTintMode="multiply"
+    tools:context=".registro.regInfoEstadoFisico">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/trailrunnin2"
-        android:backgroundTint="@color/darkColor"
-        android:backgroundTintMode="multiply"
-        tools:context=".Registro"
-        tools:layout_editor_absoluteX="205dp"
-        tools:layout_editor_absoluteY="228dp" >
-
-        <Button
-            android:id="@+id/containedButton2"
-            android:layout_width="314dp"
-            android:layout_height="42dp"
-            android:text="Algunos dias a la semana"
-            tools:layout_editor_absoluteX="50dp"
-            tools:layout_editor_absoluteY="286dp" />
-
-        <Button
-            android:id="@+id/containedButton3"
-            android:layout_width="314dp"
-            android:layout_height="42dp"
-            android:text="Una sola vez a la semana"
-            tools:layout_editor_absoluteX="47dp"
-            tools:layout_editor_absoluteY="348dp" />
-
-        <Button
-            android:id="@+id/containedButton4"
-            android:layout_width="314dp"
-            android:layout_height="42dp"
-            android:text="Cada quince dias"
-            tools:layout_editor_absoluteX="50dp"
-            tools:layout_editor_absoluteY="411dp" />
-
-        <Button
-            android:id="@+id/containedButton5"
-            android:layout_width="314dp"
-            android:layout_height="42dp"
-            android:text="Ocasionalmente"
-            tools:layout_editor_absoluteX="48dp"
-            tools:layout_editor_absoluteY="466dp" />
-
-        <Button
-            android:id="@+id/containedButton6"
-            android:layout_width="314dp"
-            android:layout_height="42dp"
-            android:text="Nunca"
-            tools:layout_editor_absoluteX="50dp"
-            tools:layout_editor_absoluteY="527dp" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tvPracticaAlgunDeporte"
+        style="@style/TittleText"
+        android:layout_height="0dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:gravity="center"
-        android:text="Con que frecuencia realizas \nalgun deporte?"
+        android:layout_marginHorizontal="@dimen/longSpace"
+        android:layout_marginTop="96dp"
+        android:text="¿has prácticado algún deporte antes?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/containedButton"
-        android:layout_width="314dp"
-        android:layout_height="42dp"
-        android:text="Todos los dias"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.217" />
 
     <com.google.android.material.button.MaterialButtonToggleGroup
-        android:id="@+id/toggleButton"
+        android:id="@+id/tbGroup1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPracticaAlgunDeporte"
+        app:singleSelection="true">
+
         <Button
-            android:id="@+id/button1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button 1"
-            style="?attr/materialButtonOutlinedStyle"
-            />
+            android:id="@+id/bSi"
+            style="@style/OutlineButton"
+            android:layout_marginHorizontal="0dp"
+            android:text="Si" />
+
         <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button 2"
-            style="?attr/materialButtonOutlinedStyle"
-            />
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button 3"
-            style="?attr/materialButtonOutlinedStyle"
-            />
+            android:id="@+id/bNo"
+            style="@style/OutlineButton"
+            android:layout_marginHorizontal="0dp"
+            android:text="No" />
 
 
     </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+    <TextView
+        android:id="@+id/tvFrecuenciaActividadFisica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/xlongSpace"
+        android:text="@string/frecuencia_actividad_fisica"
+        android:textAppearance="?attr/textAppearanceBody1"
+        android:textColor="@color/secundaryColor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbGroup1" />
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/tbGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFrecuenciaActividadFisica"
+            app:singleSelection="true"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbars="horizontal|vertical">
+
+
+            <Button
+                android:id="@+id/bTodosLosDias"
+                style="@style/OutlineButton"
+                android:layout_marginHorizontal="0dp"
+                android:text="@string/todos_los_dias" />
+
+            <Button
+                android:id="@+id/bAlgunosDias"
+                style="@style/OutlineButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="0dp"
+                android:text="@string/algunos_dias_a_la_semana" />
+
+            <Button
+                android:id="@+id/bCadaQuince"
+                style="@style/OutlineButton"
+                android:layout_marginHorizontal="0dp"
+                android:layout_marginVertical="@dimen/xlongSpace"
+                android:text="@string/cada_quince_dias" />
+
+            <Button
+                android:id="@+id/bOcacionalmente"
+                style="@style/OutlineButton"
+                android:layout_marginHorizontal="0dp"
+                android:layout_marginVertical="@dimen/longSpace"
+                android:text="@string/ocasionalmente" />
+
+            <Button
+                android:id="@+id/bNunca"
+                style="@style/OutlineButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="0dp"
+                android:layout_marginVertical="@dimen/longSpace"
+                android:text="@string/nunca" />
+
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+    <Button
+        android:id="@+id/bSiguiente"
+        android:text="@string/siguiente_text"
+        android:layout_marginTop="@dimen/xlongSpace"
+        style="@style/FilledButton"
+        app:layout_constraintTop_toBottomOf="@+id/tbGroup2"
+        tools:ignore="MissingConstraints" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

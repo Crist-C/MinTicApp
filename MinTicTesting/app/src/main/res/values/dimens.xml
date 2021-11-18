@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="longSpace">32dp</dimen>
-    <dimen name="middleSpace">16dp</dimen>
-    <dimen name="middleUpSpace">24</dimen>
     <dimen name="shortSpace">8dp</dimen>
+    <dimen name="middleSpace">16dp</dimen>
+    <dimen name="middleUpSpace">24dp</dimen>
+    <dimen name="longSpace">32dp</dimen>
     <dimen name="xlongSpace">64dp</dimen>
+    <dimen name="xxlongSpace">128dp</dimen>
 </resources>

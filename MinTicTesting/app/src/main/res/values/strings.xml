@@ -14,5 +14,21 @@
     <string name="TituloRegistrarse">Registrate</string>
     <string name="ParametrosContraseña">mínimo de 8 digitos, debe incluir un número, una mayúscula, una minúscula y un caracter especial</string>
     <string name="crea_tu_perfil">Crea tu perfil</string>
+    <string name="algunos_dias_a_la_semana">Algunos dias a la semana</string>
+    <string name="todos_los_dias">Todos los dias</string>
+    <string name="cada_quince_dias">Cada quince dias</string>
+    <string name="una_sola_vez_a_la_semana">Una sola vez a la semana</string>
+    <string name="ocasionalmente">Ocasionalmente al mes</string>
+    <string name="nunca">Nunca</string>
+    <string name="frecuencia_actividad_fisica">¿Con que frecuencia prácticas\nalguna actividad física?</string>
+    <string name="siguiente_text">Siguiente</string>
+    <string name="estadoFisico">En general considero que \nmi estado fisico es?</string>
+    <string name="excelente">excelente</string>
+    <string name="bueno">bueno</string>
+    <string name="malo">malo</string>
+    <string name="no_tan_bueno">No tan bueno</string>
+    <string name="realizo_otras_acividades">realizo otras acividades</string>
+    <string name="ingresa_tu_estatura">Ingresa tu estatura</string>
+    <string name="ingresa_tu_peso_aproximado">Ingresa tu peso aproximado</string>
 
 </resources>

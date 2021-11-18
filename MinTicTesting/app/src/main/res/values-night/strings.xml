@@ -9,4 +9,17 @@
     <string name="rg_correo">Correo</string>
     <string name="TituloRegistrarse">Registrate</string>
     <string name="ParametrosContraseña">minimo de 8 digitos, incluir almeno un numero, una mayuscula, una minuscula y un caracter especial</string>
+    <string name="algunos_dias_a_la_semana">Algunos dias a la semana</string>
+    <string name="una_sola_vez_a_la_semana">Una sola vez a la semana</string>
+    <string name="ocasionalmente">Ocasionalmente</string>
+    <string name="nunca">Nunca</string>
+    <string name="frecuencia_actividad_fisica">¿Con que frecuencia prácticas\nalguna actividad física?</string>
+    <string name="siguiente_text">Siguiente</string>
+    <string name="estadoFisico">En general considero que \nmi estado fisico es?</string>
+    <string name="excelente">excelente</string>
+    <string name="bueno">bueno</string>
+    <string name="malo">malo</string>
+    <string name="no_tan_bueno">No tan bueno</string>
+    <string name="realizo_otras_acividades">realizo otras acividades</string>
+    <string name="ingresa_tu_estatura">Ingresa tu estatura</string>
 </resources>

@@ -1,8 +1,10 @@
-package com.example.mintictesting;
+package com.example.mintictesting.registro;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.mintictesting.R;
 
 public class activity_reg_estado_fisico_3 extends AppCompatActivity {
 
