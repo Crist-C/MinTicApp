@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/trail_running1"
+    android:backgroundTint="@color/primaryColor"
+    android:backgroundTintMode="multiply"
+    tools:context=".registro.regEstadoFisico">
+
+    <TextView
+        android:id="@+id/tvPracticaAlgunDeporte"
+        style="@style/TittleText"
+        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_marginHorizontal="@dimen/longSpace"
+        android:layout_marginTop="96dp"
+        android:text="@string/estadoFisico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/tbGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPracticaAlgunDeporte"
+        app:singleSelection="true">
+
+        <Button
+            android:id="@+id/bExcelente"
+            style="@style/OutlineButton"
+            android:layout_marginHorizontal="0dp"
+            android:text="@string/excelente" />
+
+        <Button
+            android:id="@+id/bBueno"
+            style="@style/OutlineButton"
+            android:layout_marginHorizontal="0dp"
+            android:text="@string/bueno" />
+
+        <Button
+            android:id="@+id/bNotanBueno"
+            style="@style/OutlineButton"
+            android:layout_marginHorizontal="0dp"
+            android:text="@string/no_tan_bueno" />
+
+        <Button
+            android:id="@+id/bRealizoOtrasActividades"
+            style="@style/OutlineButton"
+            android:layout_marginHorizontal="0dp"
+            android:text="@string/realizo_otras_acividades" />
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <TextView
+        android:id="@+id/tvPreguntaEstatura"
+        style="@style/AsksText"
+        android:layout_marginTop="@dimen/middleUpSpace"
+        android:text="@string/ingresa_tu_estatura"
+        app:layout_constraintTop_toBottomOf="@id/tbGroup1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvPreguntaPeso"
+        style="@style/AsksText"
+        android:layout_marginTop="@dimen/middleUpSpace"
+        android:text="@string/ingresa_tu_peso_aproximado"
+        app:layout_constraintTop_toBottomOf="@+id/etEstatura"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etEstatura"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/tvMt"
+        app:layout_constraintStart_toStartOf="@+id/tvPreguntaEstatura"
+        app:layout_constraintTop_toBottomOf="@+id/tvPreguntaEstatura" />
+
+    <TextView
+        android:id="@+id/tvMt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="M"
+        android:textSize="@dimen/middleSpace"
+        android:textColor="@color/secundaryColor"
+        android:textAppearance="@style/Widget.Design.TextInputLayout"
+        app:layout_constraintEnd_toEndOf="@+id/tvPreguntaEstatura"
+        app:layout_constraintTop_toBottomOf="@+id/tvPreguntaEstatura"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etPeso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/tvKg"
+        app:layout_constraintStart_toStartOf="@+id/etEstatura"
+        app:layout_constraintTop_toBottomOf="@+id/tvPreguntaPeso" />
+
+    <TextView
+        android:id="@+id/tvKg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Kg"
+        android:textAppearance="@style/Widget.Design.TextInputLayout"
+        android:textColor="@color/secundaryColor"
+        android:textSize="@dimen/middleSpace"
+        app:layout_constraintEnd_toEndOf="@+id/tvMt"
+        app:layout_constraintTop_toBottomOf="@+id/tvPreguntaPeso"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/bRegInfPersonal"
+        style="@style/FilledButton"
+        android:text="finalizar"
+        android:layout_marginTop="@dimen/longSpace"
+        app:layout_constraintTop_toBottomOf="@+id/etPeso"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -28,7 +28,15 @@
     <string name="malo">malo</string>
     <string name="no_tan_bueno">No tan bueno</string>
     <string name="realizo_otras_acividades">realizo otras acividades</string>
-    <string name="ingresa_tu_estatura">Ingresa tu estatura</string>
-    <string name="ingresa_tu_peso_aproximado">Ingresa tu peso aproximado</string>
+    <string name="ingresa_tu_estatura">Tu estatura aproximada es:</string>
+    <string name="ingresa_tu_peso_aproximado">Tu peso aproximado es:</string>
+    <string name="imagenperfil">imagenPerfil</string>
+    <string name="TrailRunningDescription">consiste en correr por senderos de montaña, huellas, rastros o caminos secundarios, a través de montañas, cerros y montes, cruzando arroyos y ríos, con grandes trepadas y abruptas bajadas, a diferencia de lo que ocurre en los maratones y el senderismo.1​ Tanto la naturaleza del terreno como el desnivel del recorrido, además de la distancia, son dos características fundamentales de un recorrido de carrera de montaña.</string>
+    <string name="DescripcionMontañismo">coronar la cima de una montaña o hacer la caminata más larga invita a quien practica estas actividades a buscar variedad de destinos para romper su marca personal.</string>
+    <string name="DescripciónParapente">Volar y sentirse libre es el deseo de muchos. Un experto te ayudará con arneses y cuerdas de suspensión y si es tu primera vez, estará contigo surcando los aires.</string>
+    <string name="DescipcionEscalada">es una actividad que consiste en realizar ascensos sobre paredes, valiéndose de la fuerza física propia. Se considera escalada todo ascenso con las extremidades inferiores (pies y piernas; en algunos casos también se podría llegar a utilizar la rodilla, por si hubiera alguna pared al lado) y las extremidades superiores (brazos y manos). En la escalada hay alturas que implican un peligro considerable y con el objetivo de tener seguridad se utiliza equipo de protección.</string>
+    <string name="DescripcionRafting">El descenso en balsa por el caudal de los ríos es una de las actividades recreativas que tiene cada vez más adeptos. La adrenalina la produce el desafío que representa mantener el equilibrio sobre las fuertes corrientes y los rápidos.</string>
+    <string name="DescripcionSurf">Pasear por encima de las olas se ha convertido en una práctica para quienes gustan de los destinos de playa. Solo se requiere de una tabla, manejo del equilibrio y aprender a leer las olas adecuadas, con el objetivo de hacer la mejor maniobra.</string>
+    <string name="Descripcion_Rapel">Para el descenso rápido por las paredes verticales de las montañas, solo necesitas decisión, la ayuda de una cuerda y las indicaciones del guía.</string>
 
 </resources>

@@ -9,52 +9,37 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MinTicTesting">
-
         <activity
-            android:name=".registro.reg_estado_fisico4"
+            android:name=".deportes.DeportesRV"
             android:exported="false" />
         <activity
-            android:name=".registro.activity_reg_estado_fisico_3"
+            android:name=".DemoRV.InicioRV"
             android:exported="false" />
         <activity
-            android:name=".registro.regInfoEstadoFisico"
-            android:exported="true">
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-
-            </intent-filter>
-
-        </activity>
-
-
+            android:name=".registro.regEstadoFisico"
+            android:exported="true" />
+        <activity
+            android:name=".registro.regFrecuenciaPracticaDeportiva"
+            android:exported="true" />
         <activity
             android:name=".registro.regInfoPersonal"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".registro.regUsuarioContrasena"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-
-            </intent-filter>
-        </activity>
-
+            android:exported="true" />
         <activity
             android:name=".Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
