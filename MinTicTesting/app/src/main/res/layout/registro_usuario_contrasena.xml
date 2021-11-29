@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".registro.regUsuarioContrasena"
+    tools:context=".Vistas.registro.regUsuarioContrasena"
     android:background="@drawable/fondo1_small"
     android:backgroundTint="@color/highLightColor"
     android:backgroundTintMode="multiply">
@@ -31,30 +31,12 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilNombreUsuario"
-        android:hint="@string/rg_nombre_de_usuario"
-        style="@style/TextInputLayout"
-        android:layout_marginTop="@dimen/longSpace"
-        app:layout_constraintTop_toBottomOf="@+id/ivIcono"
-        app:startIconDrawable="@drawable/ic_baseline_person_24"
-        tools:ignore="MissingConstraints">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"/>
-
-
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilCorreo"
         style="@style/TextInputLayout"
         android:hint="@string/rgcorreo"
-        android:layout_marginTop="@dimen/shortSpace"
-        app:layout_constraintTop_toBottomOf="@+id/tilNombreUsuario"
+        android:layout_marginTop="@dimen/longSpace"
+        app:layout_constraintTop_toBottomOf="@+id/ivIcono"
+
         app:startIconDrawable="@drawable/ic_baseline_alternate_email_24"
         tools:ignore="MissingConstraints">
 

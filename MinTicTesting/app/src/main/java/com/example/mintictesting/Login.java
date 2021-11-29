@@ -10,8 +10,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.mintictesting.deportes.DeportesRV;
-import com.example.mintictesting.registro.regUsuarioContrasena;
+import com.example.mintictesting.Vistas.deportes.DeportesRV;
+import com.example.mintictesting.Vistas.registro.regUsuarioContrasena;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class Login extends AppCompatActivity {

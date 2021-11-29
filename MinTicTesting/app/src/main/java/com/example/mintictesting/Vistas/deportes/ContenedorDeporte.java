@@ -1,4 +1,4 @@
-package com.example.mintictesting.deportes;
+package com.example.mintictesting.Vistas.deportes;
 
 public class ContenedorDeporte {
 

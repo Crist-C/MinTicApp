@@ -1,4 +1,4 @@
-package com.example.mintictesting.deportes;
+package com.example.mintictesting.Vistas.deportes;
 
 import android.os.Bundle;
 
@@ -68,6 +68,12 @@ public class DeportesRV extends AppCompatActivity {
                 R.drawable.surf_preview1, R.drawable.surf_preview2, R.drawable.surf_preview3,
                 R.drawable.tr_pista_circuito_quilotoa, R.drawable.tr_pista_cordillera_blanca, R.drawable.tr_pista_cruze_los_andes, R.drawable.tr_pista_valle_sagrado, R.drawable.trail_running1,
                 "Surf", getString(R.string.DescripcionSurf)
+        ));
+
+        contenedorDeporteArrayList.add(new ContenedorDeporte(
+                R.drawable.futbol_preview1, R.drawable.futbol_preview2, R.drawable.futbol_preview3,
+                R.drawable.tr_pista_circuito_quilotoa, R.drawable.tr_pista_cordillera_blanca, R.drawable.tr_pista_cruze_los_andes, R.drawable.tr_pista_valle_sagrado, R.drawable.trail_running1,
+                "Futbol", getString(R.string.Descripcion_Futbol)
         ));
 
         adaptadorRVDeporte = new AdaptadorRVDeporte(this,contenedorDeporteArrayList);

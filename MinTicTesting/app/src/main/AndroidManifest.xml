@@ -10,22 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MinTicTesting">
         <activity
-            android:name=".deportes.DeportesRV"
+            android:name=".Vistas.deportes.DeportesRV"
             android:exported="false" />
         <activity
             android:name=".DemoRV.InicioRV"
             android:exported="false" />
         <activity
-            android:name=".registro.regEstadoFisico"
+            android:name=".Vistas.registro.regEstadoFisico"
             android:exported="true" />
         <activity
-            android:name=".registro.regFrecuenciaPracticaDeportiva"
+            android:name=".Vistas.registro.regFrecuenciaPracticaDeportiva"
             android:exported="true" />
         <activity
-            android:name=".registro.regInfoPersonal"
+            android:name=".Vistas.registro.regInfoPersonal"
             android:exported="true" />
         <activity
-            android:name=".registro.regUsuarioContrasena"
+            android:name=".Vistas.registro.regUsuarioContrasena"
             android:exported="true" />
         <activity
             android:name=".Login"

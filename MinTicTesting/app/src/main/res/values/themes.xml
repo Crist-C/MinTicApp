@@ -1,4 +1,4 @@
-<resources >
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Theme.MinTicTesting" parent="Theme.Material3.Dark.NoActionBar">
         <!-- Primary brand color. -->
@@ -14,7 +14,7 @@
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/secundaryColor</item>
         <item name="android:gravity">center</item>
-        <item name="android:layout_marginHorizontal">@dimen/longSpace</item>
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">@dimen/longSpace</item>
         <item name="layout_constraintEnd_toEndOf">parent</item>
         <item name="layout_constraintStart_toStartOf">parent</item>
         <item name="layout_constraintTop_toTopOf">parent</item>
@@ -27,7 +27,7 @@
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/secundaryColor</item>
         <item name="android:gravity">center</item>
-        <item name="android:layout_marginHorizontal">@dimen/longSpace</item>
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">@dimen/longSpace</item>
         <item name="layout_constraintEnd_toEndOf">parent</item>
         <item name="layout_constraintStart_toStartOf">parent</item>
         <item name="android:textAppearance">?attr/textAppearanceBody1</item>
@@ -36,7 +36,7 @@
     <style name="TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_marginHorizontal">@dimen/longSpace</item>
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">@dimen/longSpace</item>
         <item name="layout_constraintEnd_toEndOf">parent</item>
         <item name="layout_constraintStart_toStartOf">parent</item>
         <item name="helperTextEnabled">true</item>
@@ -50,7 +50,7 @@
     <style name="FilledButton" parent="Widget.Material3.Button">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginHorizontal">@dimen/xlongSpace</item>
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">@dimen/xlongSpace</item>
         <item name="layout_constraintEnd_toEndOf">parent</item>
         <item name="layout_constraintStart_toStartOf">parent</item>
         <item name="android:textAppearance">?attr/textAppearanceButton</item>
@@ -59,7 +59,7 @@
     <style name="OutlineButton" parent="Widget.Material3.Button.OutlinedButton">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginHorizontal">@dimen/xlongSpace</item>
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">@dimen/xlongSpace</item>
         <item name="layout_constraintEnd_toEndOf">parent</item>
         <item name="layout_constraintStart_toStartOf">parent</item>
         <item name="android:textAppearance">?attr/textAppearanceButton</item>
@@ -68,7 +68,7 @@
     <style name="OutlineToggleButton">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginHorizontal">@dimen/xlongSpace</item>
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">@dimen/xlongSpace</item>
         <item name="layout_constraintEnd_toEndOf">parent</item>
         <item name="layout_constraintStart_toStartOf">parent</item>
         <item name="android:textAppearance">?attr/textAppearanceButton</item>

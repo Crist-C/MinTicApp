@@ -1,4 +1,4 @@
-package com.example.mintictesting.registro;
+package com.example.mintictesting.Vistas.registro;
 
 import android.content.Intent;
 import android.os.Bundle;

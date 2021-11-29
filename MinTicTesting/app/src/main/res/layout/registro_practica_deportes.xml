@@ -8,7 +8,7 @@
     android:background="@drawable/trail_running1"
     android:backgroundTint="@color/highLightColor"
     android:backgroundTintMode="multiply"
-    tools:context=".registro.regFrecuenciaPracticaDeportiva">
+    tools:context=".Vistas.registro.regFrecuenciaPracticaDeportiva">
 
 
     <TextView

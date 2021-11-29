@@ -7,7 +7,7 @@
     android:background="@drawable/trail_running6"
     android:backgroundTint="@color/highLightColor"
     android:backgroundTintMode="multiply"
-    tools:context=".registro.regInfoPersonal">
+    tools:context=".Vistas.registro.regInfoPersonal">
 
     <TextView
         android:id="@+id/tvTittleRegInfPersonal"

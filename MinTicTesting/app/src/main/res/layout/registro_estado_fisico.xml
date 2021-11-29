@@ -7,7 +7,7 @@
     android:background="@drawable/trail_running1"
     android:backgroundTint="@color/primaryColor"
     android:backgroundTintMode="multiply"
-    tools:context=".registro.regEstadoFisico">
+    tools:context=".Vistas.registro.regEstadoFisico">
 
     <TextView
         android:id="@+id/tvPracticaAlgunDeporte"

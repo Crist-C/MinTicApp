@@ -1,8 +1,8 @@
-package com.example.mintictesting.registro;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.mintictesting.Vistas.registro;
 
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mintictesting.R;
 

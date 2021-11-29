@@ -1,4 +1,4 @@
-package com.example.mintictesting.deportes;
+package com.example.mintictesting.Vistas.deportes;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
