@@ -10,4 +10,9 @@
     <string name="registroButtonText">Registro</string>
     <string name="rg_nombre_de_usuario">Nombre de Usuario</string>
     <string name="rgcorreo">Correo</string>
+    <string name="nombre">¿EN QUE DEPORTE ESTAS BUSCANDO TU PISTA?</string>
+    <string name="Caracteristicas">FUTBOL//   ATLETISMO//    TENNIS//   BMX//    SKATERBOARD//
+                                   RAFTING//     CICLISMO//     PATINAJE//     ROLLERS//     BIKES//
+                                   SENDERISMO//     PARAPENTE//     ESCALADA//
+                                   GIMNASIA AL AIRE LIBRE//     PARAPENTE//     CANOTAJE//</string>
 </resources>
