@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".regininfoPersonal"
+    tools:context=".regUsuarioContrasena"
     android:background="@color/white">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="@dimen/xlongSpace"
         android:text="Registrate"
+        android:textSize="24sp"
         android:textColor="@color/highLightColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -47,7 +48,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
+            android:hintTextColor="#0277BD" />
 
 
 
@@ -100,11 +101,11 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/longSpace"
         android:layout_marginEnd="@dimen/longSpace"
-        android:text="Recuerda incluir tu contraseña minimo con 8 digitos incluyendoal menos un numero, un caracter en mayuscula, uno en minuscula y uno especial"
+        android:text="minimo de 8 digitos, incluir almeno un numero, una mayuscula, una minuscula y un caracter especial"
         android:textColor="#0C0C0C"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

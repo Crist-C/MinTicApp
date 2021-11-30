@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MinTicTesting">
         <activity
-            android:name=".PistasRV"
-            android:exported="false" />
-        <activity
             android:name=".regininfoPersonal"
             android:exported="false" />
         <activity
