@@ -1,4 +1,4 @@
-package com.example.mintictesting.Modelos;
+package com.example.mintictesting.Modelos.Retos;
 
 import java.util.Date;
 

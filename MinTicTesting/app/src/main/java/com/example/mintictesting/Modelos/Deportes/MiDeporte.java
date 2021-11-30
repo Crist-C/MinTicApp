@@ -1,6 +1,4 @@
-package com.example.mintictesting.Modelos;
-
-import com.example.mintictesting.Modelos.Deportes.Deporte;
+package com.example.mintictesting.Modelos.Deportes;
 
 public class MiDeporte {
 

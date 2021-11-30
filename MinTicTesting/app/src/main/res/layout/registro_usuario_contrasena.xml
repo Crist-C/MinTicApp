@@ -11,9 +11,13 @@
 
     <TextView
         android:id="@+id/tvTittle"
-        android:text="@string/TituloRegistrarse"
         style="@style/TittleText"
-        android:layout_marginTop="@dimen/xlongSpace"
+        android:text="@string/TituloRegistrarse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -41,6 +45,7 @@
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ti_Correo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/darkColor"
@@ -61,6 +66,7 @@
 
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ti_Contraseña"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/darkColor"
@@ -92,6 +98,7 @@
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ti_ConfContraseña"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/darkColor"

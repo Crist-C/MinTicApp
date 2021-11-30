@@ -1,6 +1,6 @@
 package com.example.mintictesting.Modelos.Deportistas;
 
-import com.example.mintictesting.Modelos.MiDeporte;
+import com.example.mintictesting.Modelos.Deportes.MiDeporte;
 
 public class Deportista<Participaciones> extends Usuario {
 

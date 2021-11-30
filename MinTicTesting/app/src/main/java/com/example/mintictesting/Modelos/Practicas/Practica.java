@@ -1,4 +1,4 @@
-package com.example.mintictesting.Modelos;
+package com.example.mintictesting.Modelos.Practicas;
 
 public class Practica {
 

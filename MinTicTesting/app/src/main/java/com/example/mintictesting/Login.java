@@ -3,13 +3,11 @@ package com.example.mintictesting;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.transition.Explode;
-import android.transition.Slide;
-import android.view.Gravity;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.mintictesting.Helpers.NextActivity;
 import com.example.mintictesting.Vistas.deportes.DeportesRV;
 import com.example.mintictesting.Vistas.registro.regUsuarioContrasena;
 import com.google.android.material.textfield.TextInputEditText;
@@ -30,21 +28,14 @@ public class Login extends AppCompatActivity {
 
 
         bLogin.setOnClickListener(v -> {
-            intent = new Intent(Login.this, DeportesRV.class);
-            startActivity(intent);
+            new NextActivity(this, DeportesRV.class).goToNextActivity();
         });
 
         bRegistro.setOnClickListener(v -> {
-            intent = new Intent(Login.this, regUsuarioContrasena.class);
 
-            Explode explode = new Explode();
-            explode.setDuration(1500);
-            Slide slide = new Slide(Gravity.BOTTOM);
-            slide.setDuration(1500);
-            getWindow().setExitTransition(slide);
-            getWindow().setReturnTransition(slide);
+            new NextActivity( this, regUsuarioContrasena.class).goToNextActivity();
 
-            startActivity(intent);
+
         });
 
 
