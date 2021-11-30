@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class regininfoPersonal extends AppCompatActivity {
+public class regUsuarioContrasena extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_regininfo_personal);
+        setContentView(R.layout.activity_reg_usuario_contrasena);
     }
 }
